@@ -45,12 +45,12 @@ void makebinEncode(char *x,int l,char *t) {
 		}
 		
 	}
-	for (int j = 0; j < dec.size(); j++) {
+	/*for (int j = 0; j < dec.size(); j++) {
 		cout << dec[j];
 		if ((j + 1) % 6 == 0) cout << ' ';
-	}
-	cout << endl;
-	cout<< dec.size()<<endl;
+	}*/
+	/*cout << endl;
+	cout<< dec.size()<<endl;*/
 	for (int j = 0; j < dec.size(); j += 6) {
 		if (j + 5 < dec.size()) {
 			info Temp;
@@ -74,10 +74,10 @@ void makebinEncode(char *x,int l,char *t) {
 			base.push_back(Temp);
 			base.push_back(Temp);
 	}
-	for (int j = 0; j < base.size(); j++) {
+	/*for (int j = 0; j < base.size(); j++) {
 		cout << base[j].subbyte<<' ';
 	}
-	cout << endl;
+	cout << endl;*/
 	for (int j = 0; j < base.size(); j++) {
 		base[j].d = *(t + base[j].subbyte);
 	}
